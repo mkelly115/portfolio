@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    font-size: 40px;
+    background-color: grey;
+}
+
+section {
+    border: solid white;
+    margin: 40px;
+}
