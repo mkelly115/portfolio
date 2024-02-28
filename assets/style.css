@@ -1,77 +1,107 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    background-color: bisque;
+    height: 100vh;
 }
 
 header {
     height: 70px;
 }
-div {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-}
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: center;
-    flex-direction: row;
-}
 
-nav {
+.nav {
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 70px;
     width: 100%;
-    position: relative;
-    align-items: center;
-    justify-content: space-around;
+    background-color: beige;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-
-/* .logo-container {
-    position:absolute;
+.logo-container {
     display: flex;
     align-items: center;
-    height: 70px;
-    padding-left: 10px;
-} */
-
-aside {
-    position: absolute;
-    flex-wrap: wrap;
 }
 
-
-section {
-    border: solid white;
-    padding: 40px;
-    margin: 20px;
-}
-
-
-.nav-links {
-   display: flex;
-   margin-left: auto;
-   align-items: center;
-   justify-content: flex-end;
-   list-style-type: none;
-}
-
-li a {
-    position: relative;
-    flex: auto;
-    box-align: left;
-    padding-left: 10px;
+.logo {
+    width: 50px;
+    height: auto;
     padding-right: 10px;
 }
 
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+}
+
+.desktop {
+    display: none;
+
+    @media only screen and (min-width: 600px) {
+        display: inline-block;
+    }
+}
+
+main {
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.fit {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.fit:first-child {
+    flex-grow: 2; /* Adjust the value as needed for the first (largest) image */
+  }
+  
+  .fit:not(:first-child) {
+    flex-grow: 1; /* Adjust the value as needed for the rest of the images */
+  }

@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Michaels Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nav Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
-        <header>
-         <nav>
-            <div class="logo-container">
-              <h1>Michael Kelly</h1>
-            </div>
-            <ul class="nav-links">
-              <li><a href="#Email">Home</a></li>
-              <li><a href="#Github">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo-container">
+        <img class="logo" src="./assets/MK.png" alt='Mike Kelly Logo' />
+        <h1 class="title desktop">Michael Kelly</h1>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/projects">Portfolio</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+   </header>
+    <main>
+      <section class="about-section">
+        <h3>About Me</h3>
+        <p>
+          I am a web developer with a passion for creating beautiful and functional websites. I have experience
+          with HTML, CSS, JavaScript, and React. I am also familiar with Node.js, Express, and MongoDB. I am
+          currently seeking a full-time position as a web developer in either a front end or full stack role.
+        </p>
+        <p>
+          I was born and raised in Cranford, New Jersey where I attended school and played lacrosse and football. I eventually accepted a position at the University of New England studying political science and playing lacrosse. After this time I worked in various postions from senate aid to firefighter. I have decided a web development career is best in line with my interests and skillset.
+        </p>
+      </section>
+      <section class='section'>
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+      </section>
+      <section class='section'>
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+        <img class='fit' src='https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'
+          alt='yada' />
+      </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 
-  <main class="box">
-    <aside>
-        <!-- <img src="https://imagez.tmz.com/image/d7/4by3/2022/01/09/d7809917f10747e0aee444388727eb2a_md.jpg" alt=""> -->
-        <link placeholder>
-    </aside>
-    <section>
-        <h3>About Michael Kelly</h3>
-            <p>I am a 31 year old originally from New Jersey blah blah blah</p>
-    </section>
-
-    <section>
-        <h3>Refactoring Project</h3>
-        <!-- <link placeholder> -->
-    </section>
-
-    <section>
-        <h3>Project 2</h3>
-        <!-- <link placeholder> -->
-    </section>
-
-    <section>
-        <h3>Project 3</h3>
-        <!-- <link placeholder> -->
-    </section>
-
-    <section>
-        <h3>Project 4</h3>
-        <!-- <link placeholder> -->
-    </section>
-    </body>
-  </main>
+</html>
